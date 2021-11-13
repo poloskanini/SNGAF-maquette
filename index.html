@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNGAF Maquette</title>
+  <!-- W3 Icons -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- TailWind CSS -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black w-full">
+
+   <div class="videoWrap w-full">
+
+    <div class="hero-anim" id="hero-anim">
+      <video id="heroVideo" poster="" autoplay muted src="content/Vidéo intro APPLI SNGAF SANS SON.mov"></video>
+
+    </div>
+
+    <nav class="bg-transparent absolute top-0 w-full">
+      <div class="max-w-7xl mx-auto my-3 px-2 sm:px-6 lg:px-10">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+    
+                Heroicon name: outline/menu
+    
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg id="burger-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!--
+                Icon when menu is open.
+    
+                Heroicon name: outline/x
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg id="burger-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+            <div id="logo" class="flex-shrink-0 flex items-center transition ease-out duration-100">
+              <img class="block lg:hidden h-10 w-auto" src="content/Logo Mad Attendants Transparent blanc.png" alt="Workflow">
+              <img class="hidden lg:block h-10 w-auto" src="content/Logo Mad Attendants Transparent blanc.png" alt="Workflow">
+            </div>
+            <div class="hidden sm:block sm:ml-6">
+              <div id="nav" class="flex space-x-4 items-center text-center">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                
+                <a href="#" id="accueil" class="bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium" aria-current="page">Accueil</a>
+    
+                <a href="#" id="flashs" class="text-gray-300 hover:bg-gray-700 hover:text-white transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium">Flashs SNGAF</a>
+    
+                <a href="#" id="quisommesnous" class="text-gray-300 hover:bg-gray-700 hover:text-white transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium">Qui sommes-nous ?</a>
+    
+                <a href="#" id="nouscontacter" class="text-gray-300 hover:bg-gray-700 hover:text-white transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium">Nous contacter</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile -->
+          <div id="profile" class="absolute inset-y-0 right-0 flex items-center pr-2 sm:ml-6 sm:pr-0">
+            <input class="search-input hidden border-2 border-gray-300 bg-white h-6 pl-2 pr-8 rounded-lg text-sm focus:outline-none" type="Rechercher" name="Rechercher" placeholder="Rechercher">
+
+            <i class="search-icon fa fa-search text-lg text-white cursor-pointer"></i>
+
+
+
+
+            <!-- Profile dropdown -->
+            <div class="ml-3 relative">
+              <div>
+                <button type="button" class="profile-pic bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                  <span class="sr-only">Open user menu</span>
+                  <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                </button>
+              </div>
+    
+              <div id="profile-menu" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                <!-- Active: "bg-gray-100", Not Active: "" -->
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Votre profil</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Paramètres</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Déconnexion</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out" aria-current="page">Accueil</a>
+    
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Flashs SNGAF</a>
+    
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Qui sommes-nous ?</a>
+    
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Nous contacter</a>
+        </div>
+      </div>
+    </nav>
+
+   </div>
+
+   <h1></h1>
+
+
+  <!-- TypeWriter -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- GreenSock -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- My JS -->
+  <script src="script.js"></script>
+</body>
+</html>

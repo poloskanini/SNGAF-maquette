@@ -1,0 +1,52 @@
+/*** Basic reset ***/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 1.7rem;
+}
+
+body {
+  font-family: 'Gill sans MT Condensed', sans-serif;
+}
+
+.videoWrap {
+  position: relative;
+  width: 100%;
+}
+
+.hero-anim {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#heroVideo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#bloc-orange {
+  display: none;
+  opacity: 0;
+  transition: 3s all ease-in-out;
+}
+
+h1 {
+  color: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  width: 50%;
+  text-align: center;
+}
