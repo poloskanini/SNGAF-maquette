@@ -9,16 +9,11 @@
 }
 
 html {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 body {
   font-family: 'Gill sans MT Condensed', sans-serif;
-}
-
-.videoWrap {
-  position: relative;
-  width: 100%;
 }
 
 .hero-anim {
@@ -49,4 +44,13 @@ h1 {
   font-size: 3rem;
   width: 50%;
   text-align: center;
+}
+
+
+
+
+
+
+.profile-pic img {
+  object-fit: contain;
 }
