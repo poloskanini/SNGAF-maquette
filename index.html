@@ -20,225 +20,63 @@
 
    <div class="heroWrap w-full">
 
-    <!-- <div class="hero-anim" id="hero-anim">
+    <div class="hero-anim" id="hero-anim">
       <video id="heroVideo" poster="" preload autoplay muted src="content/Vidéo intro APPLI SNGAF SANS SON.mov" onended="videoDisappear()"></video>
-    </div> -->
-
-    <!-- OLD NAVBAR TAILWIND -->
-    <!-- <nav class="bg-transparent absolute top-0 w-full">
-
-      <div class="max-w-7xl mx-auto my-3 px-2 sm:px-6 lg:px-10">
-        <div class="relative h-16 flex items-center">
-          <div class="absolute inset-y-0 left-0 flex sm:hidden">
-          
-            <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg id="burger-open" class=" md-text-centerblock h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            
-              <svg id="burger-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-
-          <div class="flex justify-between w-full items-center">
-
-            <div id="logo" class="flex items-center transition ease-out duration-100">
-              <img class="w-20 hidden lg:block" src="content/Logo Mad Attendants Transparent blanc.png" alt="Workflow">
-            </div>
-
-            <div class="hidden sm:block sm:ml-6">
-              <div id="nav" class="flex space-x-4 items-center text-center">
-                
-                <a href="#" id="accueil" class="bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium" aria-current="page">Accueil</a>
-    
-                <a href="#" id="flashs" class="text-gray-300 hover:bg-gray-700 hover:text-white transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium">Flashs SNGAF</a>
-    
-                <a href="#" id="quisommesnous" class="text-gray-300 hover:bg-gray-700 hover:text-white transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium">Qui sommes-nous ?</a>
-    
-                <a href="#" id="nouscontacter" class="text-gray-300 hover:bg-gray-700 hover:text-white transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium">Nous contacter</a>
-
-              </div>
-            </div>
-
-            <div id="profile" class="inset-y-0 right-0 pr-2 sm:ml-6 sm:pr-0">
-
-              <div class="ml-3 relative flex-shrink-0">
-                <div class="profile-wrap flex items-center">
-
-                  <div class="search px-2">
-                    <i class="search-icon fa fa-search text-lg text-white cursor-pointer px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out"></i>
-                    <input class="search-input hidden border-2 border-gray-300 bg-white h-6 pl-2 pr-8 rounded-lg text-sm focus:outline-none sm-hidden" type="Rechercher" name="Rechercher" placeholder="Rechercher">
-                  </div>
-                  
-                  <button type="button" class="profile-pic bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white flex-shrink-0" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                    <span class="sr-only">Open user menu</span>
-                    <img class="h-10 w-10 rounded-full bg-white" src="content/Logo Homme Vecto SEUL.svg" alt="">
-                  </button>
-                </div>
-      
-                <div id="profile-menu" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Votre profil</a>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Paramètres</a>
-                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Déconnexion</a>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-
-        </div>
-      </div>
-    
-      <div class="hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <ul class="burger-list">
-            <li class="burger-list-item">
-              <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out" aria-current="page">Accueil</a>
-            </li>
-            <li class="burger-list-item">
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Flashs SNGAF</a>
-            </li>
-            <li class="burger-list-item">
-
-            </li>
-            <li class="burger-list-item">
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Qui sommes-nous ?</a>
-            </li>
-            <li class="burger-list-item">
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Nous contacter</a>
-            </li>
-
-            <li class="burger-list-item">
-              <i class="search-icon fa fa-search text-lg text-white cursor-pointer px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out"></i>
-              <input class="search-input hidden border-2 border-gray-300 bg-white h-6 pl-2 pr-8 rounded-lg text-sm focus:outline-none sm-hidden" type="Rechercher" name="Rechercher" placeholder="Rechercher">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-
-    <!-- NEW NAVBAR -->
-
-    <!-- <nav class="flex justify-around items-center p-3 m-2">
-
-      <div class="mobile-menu lg:hidden sm-block">
-
-        <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg id="burger-open" class=" md-text-centerblock h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            
-              <svg id="burger-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-
-      </div>
-      
-            
-      <div class="desktop-menu flex justify-around w-full items-center">
-
-        <button id="logo" class="text-white" href="index.html">
-        <img src="content/Logo Mad Attendants Transparent blanc.png" alt="" class="brand w-20 h-auto">
-      </button>
-
-      <div id="navlist" class="menu text-white text-center">
-        <ul class="navlist-ul text-white flex">
-          <li class="navlist-li px-4">
-            <a class="navlist-a text-white text-base hover:text-gray-400 transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium" href="#">Accueil</a>
-          </li>
-          <li class="navlist-li px-4">
-            <a class="navlist-a text-white text-base hover:text-gray-400 transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium" href="#">Flashs SNGAF</a>
-          </li>
-          <li class="navlist-li px-4">
-            <a class="navlist-a text-white text-base hover:text-gray-400 transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium" href="#">Qui sommes-nous ?</a>
-          </li>
-          <li class="navlist-li px-4">
-            <a class="navlist-a text-white text-base hover:text-gray-400 transition duration-500 ease-in-out px-3 py-1 rounded-md text-sm font-medium" href="#">Contactez la Famille</a>
-          </li>
-        </ul>
-      </div>
-
-      <button id="profile" class="profile-pic bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-        <div class="profile-pic bg-white rounded-full w-10 h-10 flex p-px">
-          <img class="object-contain" src="content/Logo Homme Vecto SEUL.png" alt="">
-        </div>
-      </button>
-
-      </div>
-
-      <div class="hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <ul class="burger-list">
-            <li class="burger-list-item">
-              <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300 ease-in-out" aria-current="page">Accueil</a>
-            </li>
-            <li class="burger-list-item">
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Flashs SNGAF</a>
-            </li>
-            <li class="burger-list-item">
-
-            </li>
-            <li class="burger-list-item">
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Qui sommes-nous ?</a>
-            </li>
-            <li class="burger-list-item">
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out">Nous contacter</a>
-            </li>
-
-            <li class="burger-list-item">
-              <i class="search-icon fa fa-search text-lg text-white cursor-pointer px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out"></i>
-              <input class="search-input hidden border-2 border-gray-300 bg-white h-6 pl-2 pr-8 rounded-lg text-sm focus:outline-none sm-hidden" type="Rechercher" name="Rechercher" placeholder="Rechercher">
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-
-
-    </nav> -->
+    </div>
    
-    <header class="primary-header flex items-center justify-between p-4">
-      <div id="logo">
+    <header class="primary-header items-center px-4 fixed">
+      <div id="logo" class="flex justify-center ml-2">
         <a href="index.html">
-          <img class="logo-img m-4" src="content/Logo Mad Attendants Transparent blanc.png" style="width: 5rem" alt="">
+          <img class="logo-img my-3" src="content/Logo Mad Attendants Transparent blanc.png" style="width: 7rem" alt="">
         </a>
-       
       </div>
 
-      <nav id="navlist"class="text-white">
-        <ul class="primary-navigation flex items-center text-base letter-spacing-2">
-          <li class="px-3 bg-gray-400 text-white block rounded-md text-base font-medium transition duration-300 ease-in-out">
+      <button class="mobile-nav-toggle center" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">MENU</span>
+      </button>
+
+      <nav id="navlist"class="text-white mb-3 uppercase">
+        <ul class="primary-navigation flex items-center justify-center text-base letter-spacing-2" data-visible="false">
+
+          <li class="nav-item nav-link-home px-3 bg-white block rounded-md text-base font-medium">
             <a href="#">Accueil</a>
           </li>
-          <li class="px-3">
+
+          <li class="nav-item px-3 text-center">
             <a class="nav-link relative" href="#">Flashs SNGAF</a>
           </li>
-          <li class="px-3">
-            <a class="nav-link relative" href="https://poloskanini.github.io/photomaton_SNGAF/">Qui sommes-nous ?</a>
+
+          <li class="nav-item px-3 text-center">
+            <a class="nav-link relative" href="#">Contactez nous</a>
           </li>
-          <li class="px-3">
-            <a class="nav-link relative" href="#">Nous contacter</a>
+
+          <li class="nav-item px-3 items-center text-center">
+            <a class="nav-link relative" href="https://poloskanini.github.io/photomaton_SNGAF/">Qui sommes nous ?</a>
           </li>
-          <li class="search">
-            <input class="search-input border-2 border-gray-300 bg-white h-6 pl-2 pr-8 rounded-lg text-sm focus:outline-none sm-hidden" type="Rechercher" name="Rechercher" placeholder="Rechercher">
-            <i class="search-icon fa fa-search text-lg text-white cursor-pointer px-3 rounded-md font-medium hover:bg-gray-400 hover:text-white transition duration-300 ease-in-out"></i>
+
+          <li class="nav-item px-3 items-center text-center">
+            <a class="nav-link relative" href="https://poloskanini.github.io/photomaton_SNGAF/">Adhésion</a>
           </li>
-          <li class="profile-button px-3">
-            <button id="profile" class="profile-pic bg-gray-800 flex text-sm rounded-full " id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-              <div class="profile-pic rounded-full w-10 h-10 flex p-px">
+
+          <li class="nav-item search-mobile px-3 items-center text-center hidden">
+            <input type="text" placeholder="Rechercher" class="text-center rounded-md text-gray-700">
+          </li>
+
+          <li class="nav-item profile-button px-3">
+            <button id="profile" class="profile-pic bg-gray-800 flex text-sm rounded-full" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <div class="profile-pic rounded-full w-7 h-7 flex p-px">
                 <img class="object-contain rounded-full" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.6435-9/70956512_10156562274286966_773898302956503040_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iPbH571yqPcAX8xUDDx&_nc_ht=scontent-cdt1-1.xx&oh=7cfee0fe522b0a2d3038ef166c5f71ea&oe=61D30285" alt="">
               </div>
             </button>
-            <div id="profile-menu" class="absolute hidden right-0 w-48 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-300 ease-in-out" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400 hover:text-white transition duration-100 ease-in-out" role="menuitem" tabindex="-1" id="user-menu-item-0">Votre profil</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400 hover:text-white transition duration-100 ease-in-out" role="menuitem" tabindex="-1" id="user-menu-item-1">Paramètres</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400 hover:text-white transition duration-100 ease-in-out" role="menuitem" tabindex="-1" id="user-menu-item-2">Déconnexion</a>
+            <div id="profile-menu" class="absolute hidden w-48 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-300 ease-in-out" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+              <a href="#" class="profile-menu-link block px-4 py-2 text-sm text-gray-700 transition duration-100 ease-in-out" role="menuitem" tabindex="-1" id="user-menu-item-0">Votre profil</a>
+              <a href="#" class="profile-menu-link block px-4 py-2 text-sm text-gray-700 transition duration-100 ease-in-out" role="menuitem" tabindex="-1" id="user-menu-item-1">Paramètres</a>
+              <a href="#" class="profile-menu-link block px-4 py-2 text-sm text-gray-700 transition duration-100 ease-in-out" role="menuitem" tabindex="-1" id="user-menu-item-2">Déconnexion</a>
             </div>
+          </li>
+
+          <li class="nav-item search">
+            <i class="search-icon fa fa-search text-lg text-white cursor-pointer px-3 rounded-md font-medium transition duration-300 ease-in-out"></i>
           </li>
           
         </ul>
@@ -247,9 +85,15 @@
     </header>
 
     <ul id="socials">
-      <li class="bulle"><img src="content/fb.svg" class="logo-socials"></li>
-      <li class="bulle"><img src="content/insta.svg" class="logo-socials"></li>
-      <li class="bulle"><img src="content/yt.svg" class="logo-socials"></li>
+      <li class="bulle">
+        <img src="content/fb.svg" class="logo-socials">
+      </li>
+      <li class="bulle">
+        <img src="content/insta.svg" class="logo-socials">
+      </li>
+      <li class="bulle">
+        <img src="content/yt.svg" class="logo-socials">
+      </li>
     </ul>
 
     <div class="search-data-close-button">
@@ -259,10 +103,9 @@
     <div class="search-data-wrapper">
 
       <div class="search-data">
-        <input type="text" required>
+        <input class="search-data-input" type="text" required>
         <div class="line"></div>
         <label>Que recherchez vous ?</label>
-        <i class="search-icon-inside fa fa-search text-lg text-white cursor-pointer px-3 rounded-md font-medium hover:bg-gray-400 hover:text-white transition duration-300 ease-in-out"></i>
 
       </div>
     </div>
