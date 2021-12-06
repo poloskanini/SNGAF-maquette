@@ -14,16 +14,13 @@ html {
 
 body {
   font-family: 'Gill sans MT Condensed', sans-serif;
-  overflow-y: hidden;
 }
 
 .heroWrap {
   background: url(content/94414604_m.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  position: relative;
+  background-position: top;
 }
 
 /* Video intro */
@@ -46,11 +43,10 @@ body {
 }
 
 header {
-  top: 0;
-  position: absolute;
-  width: 100%;
   background-color: rgba(39, 38, 38, 0.3);
+  z-index: 1000;
 }
+
 
 /* UTILITY CLASS */
 .flex {
@@ -63,17 +59,12 @@ header {
   transition: 1s all ease-in-out;
 }
 
-/* Mobile Nav Toggle */
-/* .mobile-nav-toggle {
-  display: none;
-} */
-
 /* Hover nav-link */
 a.nav-link:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 3px;
   bottom: -20px;
   left: 0;
   background-color: salmon;
@@ -85,34 +76,6 @@ a.nav-link:before {
 a.nav-link:hover:before {
   visibility: visible;
   transform: scaleX(1);
-}
-
-/* SOCIALS */
-#socials {
-  list-style-type: none;
-  position: absolute;
-  left: 0;
-  top: 45%;
-  padding: 1rem;
-}
-
-.bulle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid #f1f1f1;
-  display: flex;
-  background: #f1f1f1;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-  cursor: pointer;
-  position: relative;
-}
-
-.logo-socials {
-  width: 30px;
-  height: 30px;
 }
 
 /* SEARCH DATA */
@@ -200,7 +163,7 @@ a.nav-link:hover:before {
 
 .search-data-close-button {
   position: absolute;
-  z-index: 99;
+  z-index: 99999;
   right: 180px;
   top: 60px;
   color: #FFF;
@@ -216,17 +179,24 @@ a.nav-link:hover:before {
 
 .search-icon:hover,
 .search-data-close-button:hover,
-a.nav-link:hover,
 .profile-menu-link:hover,
 .nav-link-home {
   color: salmon;
 }
 
+#socials {
+  top: 45%;
+  position: absolute;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 850px) {
+  .heroWrap {
+    background-position: center;
+  }
   .primary-navigation {
-    --gap: 2rem;
     position: fixed;
+    line-height: 20px;
     inset: 0 0% 0% 0%;
     /* inset: 0 0% 0% 30%; */
     background-color: rgba(0, 0, 0, 0.3);
@@ -236,16 +206,12 @@ a.nav-link:hover,
     padding: min(20vh, 10rem) 2rem;
     transition: .3s background-color ease-in-out;
     z-index: 1000;
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     transition: transform 350ms ease-out;
   }
 
   .primary-navigation[data-visible="true"] {
     transform: translateY(0%);
-  }
-
-  #logo {
-    justify-content: flex-start;
   }
 
   .search-icon {
@@ -267,12 +233,18 @@ a.nav-link:hover,
     height: 2rem;
     border: 0;
     top: 2rem;
-    right: 2rem;
+    right: 0;
+    margin-right: .5rem;
     z-index: 9999;
     color: white;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
     background: url(content/close.svg);
+  }
+
+  #socials {
+    top: .5rem;
+    position: absolute;
   }
 } 

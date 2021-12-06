@@ -12,6 +12,8 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Saas -->
+  <link rel="stylesheet" href="sass.css">
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,17 +22,19 @@
 
    <div class="heroWrap w-full">
 
+    <!-- Video -->
     <div class="hero-anim" id="hero-anim">
       <video id="heroVideo" poster="" preload autoplay muted src="content/Vidéo intro APPLI SNGAF SANS SON.mov" onended="videoDisappear()"></video>
     </div>
    
-    <header class="primary-header items-center px-4 fixed">
+    <header class="primary-header items-center px-4 fixed top-0 w-full">
       <div id="logo" class="flex justify-center ml-2">
         <a href="index.html">
-          <img class="logo-img my-3" src="content/Logo Mad Attendants Transparent blanc.png" style="width: 7rem" alt="">
+          <img class="logo-img my-4" src="content/Logo Mad Attendants Transparent blanc.png" style="width: 7rem" alt="">
         </a>
       </div>
 
+      <!-- Burger MENU -->
       <button class="mobile-nav-toggle center" aria-controls="primary-navigation" aria-expanded="false">
         <span class="sr-only">MENU</span>
       </button>
@@ -84,31 +88,146 @@
 
     </header>
 
-    <ul id="socials">
-      <li class="bulle">
-        <img src="content/fb.svg" class="logo-socials">
+    <!-- SECTION ARTICLES -->
+    <section class="section w-full mt-20 absolute top-40">
+      <div class="articles-wrap relative w-full flex flex-wrap justify-center">
+
+        <article class="article cursor-pointer">
+          <div class="">  
+            <div class="max-w-sm lg:w-64 rounded overflow-hidden shadow-lg bg-white bg-opacity-75">
+              <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/12/KILT-DECEMBRE-21-1536x921.jpg" alt="Mountain">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Kiss Landing Tribune</div>
+                <p class="text-gray-700 text-base">
+                  🎅🏽 ON TE SOUHAITE UN JOYEUX NOËL 🎅🏽 
+Où que tu sois, en ce mois de décembre et pour cette période de Noël ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="article cursor-pointer">
+          <div class="">  
+            <div class="max-w-sm lg:w-64 rounded overflow-hidden shadow-lg bg-white bg-opacity-75">
+              <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/12/Destination-HKG-2048x1228.jpg" alt="Mountain">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Kiss Landing Tribune</div>
+                <p class="text-gray-700 text-base">
+                  🎅🏽 ON TE SOUHAITE UN JOYEUX NOËL 🎅🏽 
+Où que tu sois, en ce mois de décembre et pour cette période de Noël ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="article cursor-pointer">
+          <div class="">  
+            <div class="max-w-sm lg:w-64 rounded overflow-hidden shadow-lg bg-white bg-opacity-75">
+              <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/12/JE-SUIS-TON-PER-MINIATURE-1-2048x1228.jpg" alt="Mountain">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Kiss Landing Tribune</div>
+                <p class="text-gray-700 text-base">
+                  🎅🏽 ON TE SOUHAITE UN JOYEUX NOËL 🎅🏽 
+Où que tu sois, en ce mois de décembre et pour cette période de Noël ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="article cursor-pointer">
+          <div class="">  
+            <div class="max-w-sm lg:w-64 rounded overflow-hidden shadow-lg bg-white bg-opacity-75">
+              <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/11/Bons-noel-2021-2048x1228.jpg" alt="Mountain">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Kiss Landing Tribune</div>
+                <p class="text-gray-700 text-base">
+                  🎅🏽 ON TE SOUHAITE UN JOYEUX NOËL 🎅🏽 
+Où que tu sois, en ce mois de décembre et pour cette période de Noël ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- SOCIALS -->
+    <ul id="socials" class="px-4">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+        <img src="content/fb.svg" class="logo-socials w-4 h-4">
       </li>
-      <li class="bulle">
-        <img src="content/insta.svg" class="logo-socials">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+        <img src="content/insta.svg" class="logo-socials w-4 h-4">
       </li>
-      <li class="bulle">
-        <img src="content/yt.svg" class="logo-socials">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+        <img src="content/yt.svg" class="logo-socials w-4 h-4">
       </li>
     </ul>
 
+    <!-- SEARCH DATA CLOSE BUTTON -->
     <div class="search-data-close-button">
       <i class="fas fa-times"></i>
     </div>
 
+    <!-- SEARCH DATA -->
     <div class="search-data-wrapper">
-
       <div class="search-data">
         <input class="search-data-input" type="text" required>
         <div class="line"></div>
         <label>Que recherchez vous ?</label>
-
       </div>
     </div>
+
+
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+      <div class="rounded overflow-hidden shadow-lg bg-white">
+        <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/12/Destination-HKG-2048x1228.jpg" alt="Mountain">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Mountain</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded overflow-hidden shadow-lg bg-white">
+        <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/12/Destination-HKG-2048x1228.jpg" alt="Mountain">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Mountain</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded overflow-hidden shadow-lg bg-white">
+        <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/12/Destination-HKG-2048x1228.jpg" alt="Mountain">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Mountain</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+
+      <div class="rounded overflow-hidden shadow-lg bg-white">
+        <img class="w-full" src="https://www.sngaf.com/wp-content/uploads/2021/12/Destination-HKG-2048x1228.jpg" alt="Mountain">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Mountain</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div> -->
+  
+  
+    </div>
+  </div>
     
 
    </div>
