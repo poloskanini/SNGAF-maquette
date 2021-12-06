@@ -84,13 +84,14 @@ a.nav-link:hover:before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
 .search-data-wrapper {
   position: fixed;
   height: 0px;
   width: 0px;
-  background: hsl(0, 0%, 0%, .8);
+  background: hsl(0, 0%, 0%, .9);
   border-radius: 100%;
   transition: all .4s linear;
 }
@@ -189,7 +190,7 @@ a.nav-link:hover:before {
   position: absolute;
 }
 
-/* SECTION */
+/* SECTION ARTICLES */
 
 .visuallyhidden {
   position: absolute;
@@ -201,12 +202,11 @@ a.nav-link:hover:before {
 .container {
   overflow: hidden;
   padding: 20px;
-  margin-top: 2em;
 }
 
 .card-carousel {
   --card-width: 80%;
-  --card-max-width: 280px;
+  --card-max-width: 380px;
   --card-height: 400px;
   --carousel-min-width: 600px;
   z-index: 1;
@@ -229,7 +229,7 @@ a.nav-link:hover:before {
 }
 
 .card-carousel .card {
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 1);
   width: var(--card-width);
   max-width: var(--card-max-width);
   text-align: center;
@@ -237,7 +237,6 @@ a.nav-link:hover:before {
   height: var(--card-height);
   position: absolute;
   margin: 0 auto;
-  color: rgba(0,0,0,.5);
   transition: inherit;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
@@ -248,10 +247,16 @@ a.nav-link:hover:before {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  filter: brightness(1);
+  transition: .3s filter ease-in-out;
 }
 
-.card.highlight {
-  filter: brightness(1);
+.card:hover {
+  filter: brightness(50%);
+}
+
+.card.highlight:hover {
+  filter: brightness(90%);
 }
 
 
@@ -312,5 +317,9 @@ a.nav-link:hover:before {
   #socials {
     top: .5rem;
     position: absolute;
+  }
+
+  .card-carousel .card {
+    min-width: 200px;
   }
 } 
