@@ -198,8 +198,8 @@ a.nav-link:hover:before {
     position: fixed;
     line-height: 20px;
     inset: 0 0% 0% 0%;
-    /* inset: 0 0% 0% 30%; */
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(1rem);
     flex-direction: column;
     align-items: center;
