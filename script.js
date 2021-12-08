@@ -18,12 +18,12 @@ window.addEventListener('load', () => {
 const profile = document.querySelector('.profile-button');
 const profileMenu = document.getElementById('profile-menu');
 
-profile.addEventListener("mouseenter", () => {
-  profileMenu.classList.add("active")
-});
-profile.addEventListener("mouseleave", () => {
-  profileMenu.classList.remove("active")
-});
+// profile.addEventListener("mouseenter", () => {
+//   profileMenu.classList.add("active")
+// });
+// profile.addEventListener("mouseleave", () => {
+//   profileMenu.classList.remove("active")
+// });
 profile.addEventListener("click", () => {
   profileMenu.classList.toggle("active")
 });

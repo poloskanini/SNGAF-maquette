@@ -24,7 +24,7 @@
 
     <!-- Video -->
     <div class="hero-anim" id="hero-anim">
-      <video id="heroVideo" poster="" autoplay playsinline muted src="content/Vidéo intro APPLI SNGAF SANS SON.mov" onended="videoDisappear()"></video>
+      <!-- <video id="heroVideo" poster="" autoplay playsinline muted src="content/Vidéo intro APPLI SNGAF SANS SON.mov" onended="videoDisappear()"></video> -->
     </div>
    
     <header class="primary-header items-center px-4 fixed top-0 w-full">
@@ -39,6 +39,7 @@
         <span class="sr-only">MENU</span>
       </button>
 
+      <!-- NAVBAR -->
       <nav id="navlist"class="text-white mb-3 uppercase">
         <ul class="primary-navigation flex items-center justify-center text-base letter-spacing-2" data-visible="false">
 
@@ -67,7 +68,7 @@
           </li>
 
           <li class="nav-item profile-button px-3">
-            <button id="profile" class="profile-pic bg-gray-800 flex text-sm rounded-full" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+            <button id="profile" class="profile-pic bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" type="button" aria-expanded="false" aria-haspopup="true">
               <div class="profile-pic rounded-full w-7 h-7 flex p-px">
                 <img class="object-contain rounded-full" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.6435-9/70956512_10156562274286966_773898302956503040_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iPbH571yqPcAX8xUDDx&_nc_ht=scontent-cdt1-1.xx&oh=7cfee0fe522b0a2d3038ef166c5f71ea&oe=61D30285" alt="">
               </div>
@@ -80,7 +81,7 @@
           </li>
 
           <li class="nav-item search">
-            <i class="search-icon fa fa-search text-lg text-white cursor-pointer px-3 rounded-md font-medium transition duration-300 ease-in-out"></i>
+            <i class="search-icon fa fa-search text-lg text-white cursor-pointer p-4 rounded-md font-medium transition duration-300 ease-in-out"></i>
           </li>
           
         </ul>
@@ -178,14 +179,6 @@
 
     </section>
 
-    <section class="section absolute top-48 w-full">
-      
-
-    </section>
-
-    
- 
-
     <!-- SOCIALS -->
     <ul id="socials" class="px-4">
       <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
@@ -200,7 +193,7 @@
     </ul>
 
     <!-- SEARCH DATA CLOSE BUTTON -->
-    <div class="search-data-close-button">
+    <div class="search-data-close-button p-4">
       <i class="fas fa-times"></i>
     </div>
 
@@ -228,6 +221,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- My JS -->
   <script src="hammer.min.js"></script>
+  <script src="articles.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
