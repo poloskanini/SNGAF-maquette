@@ -3,14 +3,16 @@ const navItems = document.querySelectorAll('.nav-item');
 const socials = document.querySelectorAll('.bulle');
 const articles = document.querySelectorAll('.article');
 const section = document.querySelector('.section');
+const header = document.querySelector('.primary-header')
 
 window.addEventListener('load', () => {
     const TL = gsap.timeline({paused : true})
     TL
-    .staggerFrom("#logo", 1, {opacity: 0, ease: "power2.out"}, 1, "+=1.6")
+    .staggerFrom(header, 1, {opacity: 0, ease: "power2.out"}, 1, "+=1.6")
+    
     .staggerFrom(navItems, 1, {top: -100, opacity: 0, ease: "power2.out"}, .3)
-    .staggerFrom(socials, .6, {left: -200, ease: "power2.out"}, .3, '-=.1')
-    .staggerFrom(section, 6, {opacity: 0, ease: "power2.out"}, 1, '-=.5');
+    .staggerFrom(socials, .6, {left: -200, ease: "power2.out"}, .3, '-=4')
+    .staggerFrom(section, 6, {opacity: 0, ease: "power2.out"}, 1, '-=.1');
     TL.play();
   })
 

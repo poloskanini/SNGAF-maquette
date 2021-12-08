@@ -65,7 +65,7 @@ a.nav-link:before {
   position: absolute;
   width: 100%;
   height: 3px;
-  bottom: -20px;
+  bottom: -10px;
   left: 0;
   background-color: salmon;
   visibility: hidden;
@@ -258,7 +258,7 @@ a.nav-link:hover:before {
 }
 
 .card.highlight:hover {
-  filter: brightness(90%);
+  filter: brightness(100%);
 }
 
 /* NEW SECTION ARTICLES */
@@ -274,8 +274,7 @@ a.nav-link:hover:before {
     position: fixed;
     line-height: 20px;
     inset: 0 0% 0% 0%;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-    background: rgba(0, 0, 0, 0.6);
+    background: hsl(0, 0%, 0%, 0.7);
     backdrop-filter: blur(1rem);
     flex-direction: column;
     align-items: center;
@@ -285,6 +284,13 @@ a.nav-link:hover:before {
     transform: translateY(-150%);
     transition: transform 350ms ease-out;
   }
+
+  /* @supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+      background: hsl(0, 0%, 0%, 0.1);
+      backdrop-filter: blur(1rem);
+    }
+  } */
 
   .primary-navigation[data-visible="true"] {
     transform: translateY(0%);
