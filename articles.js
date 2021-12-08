@@ -86,7 +86,6 @@ class DraggingEvent {
   }
 }
 
-
 class CardCarousel extends DraggingEvent {
   constructor(container, controller = undefined) {
     super(container)
@@ -108,7 +107,6 @@ class CardCarousel extends DraggingEvent {
       this.controllerElement.addEventListener("keydown", this.controller.bind(this))      
     }
 
-    
     // Initializers
     this.build()
     
@@ -142,7 +140,6 @@ class CardCarousel extends DraggingEvent {
       })
     }
   }
-  
   
   controller(e) {
     const temp = {...this.xScale};

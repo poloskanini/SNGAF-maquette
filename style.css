@@ -190,7 +190,7 @@ a.nav-link:hover:before {
   position: absolute;
 }
 
-/* SECTION ARTICLES */
+/* SECTION ARTICLES (with HAMMER */
 
 .visuallyhidden {
   position: absolute;
@@ -220,7 +220,8 @@ a.nav-link:hover:before {
 
 @media screen and (max-width: 640px) {
   .card-carousel {
-    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2);
+    --card-max-width: 300px;
   }
 }
 
@@ -258,6 +259,9 @@ a.nav-link:hover:before {
 .card.highlight:hover {
   filter: brightness(90%);
 }
+
+/* NEW SECTION ARTICLES */
+
 
 
 /* MEDIA QUERIES */
