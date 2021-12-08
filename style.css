@@ -188,6 +188,7 @@ a.nav-link:hover:before {
 #socials {
   top: 45%;
   position: absolute;
+  z-index: 9999;
 }
 
 /* SECTION ARTICLES (with HAMMER */
