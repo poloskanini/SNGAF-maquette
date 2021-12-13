@@ -23,7 +23,7 @@ input[type=radio] {
           align-items: center;
   overflow-x: hidden;
   position: relative;
-  top: 6rem;
+  top: 4rem;
 }
 
 .cards {
@@ -69,8 +69,8 @@ input[type=radio] {
 #item-3:checked ~ .cards #card-5,
 #item-4:checked ~ .cards #card-1,
 #item-5:checked ~ .cards #card-2 {
-  -webkit-transform: translatex(-60%) scale(0.6);
-          transform: translatex(-60%) scale(0.6);
+  -webkit-transform: translatex(-80%) scale(0.6);
+          transform: translatex(-80%) scale(0.6);
   z-index: -1;
 }
 
@@ -79,8 +79,8 @@ input[type=radio] {
 #item-3:checked ~ .cards #card-1,
 #item-4:checked ~ .cards #card-2,
 #item-5:checked ~ .cards #card-3 {
-  -webkit-transform: translatex(60%) scale(0.6);
-          transform: translatex(60%) scale(0.6);
+  -webkit-transform: translatex(80%) scale(0.6);
+          transform: translatex(80%) scale(0.6);
   z-index: -1;
 }
 
@@ -115,10 +115,10 @@ input[type=radio] {
 }
 
 @media (max-width: 850px) {
-  .card {
+  label.card {
     position: absolute;
-    width: 250px;
-    min-height: 300px;
+    max-width: 250px;
+    max-height: 500px;
     left: 0;
     right: 0;
     margin: auto;

@@ -90,14 +90,20 @@
 
     <!-- SOCIALS -->
     <ul id="socials" class="px-4">
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
-        <img src="content/fb.svg" class="logo-socials w-4 h-4">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer hover:bg-red-400 transition duration-300 ease-in-out">
+        <a href="https://www.facebook.com/groups/infossngaf" target="blank">
+          <img src="content/fb.svg" class="logo-socials w-4 h-4">
+        </a>
       </li>
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
-        <img src="content/insta.svg" class="logo-socials w-4 h-4">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer hover:bg-red-400 transition duration-300 ease-in-out">
+        <a href="https://www.instagram.com/sngaf.officiel/?hl=fr" target="blank">
+          <img src="content/insta.svg" class="logo-socials w-4 h-4">
+        </a>
       </li>
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
-        <img src="content/yt.svg" class="logo-socials w-4 h-4">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer hover:bg-red-400 transition duration-300 ease-in-out">
+        <a href="https://www.youtube.com/c/SNGAFTV" target="blank">
+          <img src="content/yt.svg" class="logo-socials w-4 h-4">
+        </a>
       </li>
     </ul>
 
@@ -117,8 +123,6 @@
 
     <!-- SECTION ARTICLES -->
     <section class="section absolute w-full flex justify-center items-center h-full">
-
-      <!-- (WITH ARTICLES.JS) -->
 
       <!-- <div class="articles-wrap relative w-42 flex justify-center">
 
@@ -204,9 +208,7 @@
         </div>
 
       </div> -->
-
-      <!-- (WITH SWIPERARTICLES.JS) -->
-      
+ 
       
         <div class="container-cards flex justify-center">
             <input type="radio" name="slider" id="item-1" checked>
@@ -217,61 +219,77 @@
           <div class="cards">
 
             <!-- Card 1 -->
-            <label class="card" for="item-1" id="card-1">
+            <label class="card text-center" for="item-1" id="card-1">
               <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/12/JE-SUIS-TON-PER-MINIATURE-1-scaled.jpg" alt="">
               <div class="text-card-container px-6 py-3 w-full h-auto">
-                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
+                <h2 class="card-title font-bold text-gray-700 text-sm">
                   Dates Clés
                 </h2>
-                <p class="text-gray-700 text-sm">
-                  Tu as reçu tout un tas de mails de Natixis, d’Arial CNP et d’Air France et tu es un peu perdu ? Tu t’interroges : « mais bon sang, c’est quoi ces PER, PERO, PERCO et compagnie ? » </p>
+                <p class="text-gray-700 text-sm py-3">
+                  Tu as reçu tout un tas de mails de Natixis, d’Arial CNP et d’Air France et tu es un peu perdu ?</p>
+                <button class="bg-gray-300 hover:bg-red-400 transition duration-100 ease-in-out text-black font-bold py-2 px-4 rounded">
+                  Lire la suite
+                </button>
+
               </div>
             </label>
 
             <!-- Card 2 -->
-            <label class="card" for="item-2" id="card-2">
+            <label class="card text-center" for="item-2" id="card-2">
               <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/12/KILT-DECEMBRE-21-scaled.jpg" alt="">
               <div class="text-card-container px-6 py-3 w-full h-auto">
-                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
+                <h2 class="card-title font-bold text-gray-700 text-sm">
                   Kiss Landing Tribune - Décembre 2021
                 </h2>
-                <p class="text-gray-700 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="text-gray-700 text-sm py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+                <button class="bg-gray-300 hover:bg-red-400 transition duration-100 ease-in-out text-black font-bold py-2 px-4 rounded">
+                  Lire la suite
+                </button>
               </div>
             </label>
 
             <!-- Card 3 -->
-            <label class="card" for="item-3" id="card-3">
+            <label class="card text-center" for="item-3" id="card-3">
               <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/11/DATES-CLES-APPLI-scaled.jpg" alt="">
               <div class="text-card-container px-6 py-3 w-full h-auto">
-                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
-                  Dates Clés
+                <h2 class="card-title font-bold text-gray-700 text-sm">
+                  Courriers à la direction
                 </h2>
-                <p class="text-gray-700 text-sm">
+                <p class="text-gray-700 text-sm py-3">
                   Notre beau métier nous oblige à vivre à l’horizon du prochain DDA ou sur un fuseau horaire qui n’existe que dans nos insomnies.</p>
+                  <button class="bg-gray-300 hover:bg-red-400 transition duration-100 ease-in-out text-black font-bold py-2 px-4 rounded">
+                    Lire la suite
+                  </button>
               </div>
             </label>
 
             <!-- Card 4 -->
-            <label class="card" for="item-4" id="card-4">
+            <label class="card text-center" for="item-4" id="card-4">
               <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/11/Bons-noel-2021-2048x1228.jpg" alt="">
               <div class="text-card-container px-6 py-3 w-full h-auto">
-                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
+                <h2 class="card-title font-bold text-gray-700 text-sm">
                   Dates Clés
                 </h2>
-                <p class="text-gray-700 text-sm">
+                <p class="text-gray-700 text-sm py-3">
                   Notre beau métier nous oblige à vivre à l’horizon du prochain DDA ou sur un fuseau horaire qui n’existe que dans nos insomnies.</p>
+                  <button class="bg-gray-300 hover:bg-red-400 transition duration-100 ease-in-out text-black font-bold py-2 px-4 rounded">
+                    Lire la suite
+                  </button>
               </div>
             </label>
 
             <!-- Card 5 -->
-            <label class="card" for="item-5" id="card-5">
+            <label class="card text-center" for="item-5" id="card-5">
               <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/11/piano-bruce-almighty.gif" alt="">
               <div class="text-card-container px-6 py-3 w-full h-auto">
-                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
+                <h2 class="card-title font-bold text-gray-700 text-sm">
                   Dates Clés
                 </h2>
-                <p class="text-gray-700 text-sm">
+                <p class="text-gray-700 text-sm py-3">
                   Notre beau métier nous oblige à vivre à l’horizon du prochain DDA ou sur un fuseau horaire qui n’existe que dans nos insomnies.</p>
+                  <button class="bg-gray-300 hover:bg-red-400 transition duration-100 ease-in-out text-black font-bold py-2 px-4 rounded">
+                    Lire la suite
+                  </button>
               </div>
             </label>
 
