@@ -3,7 +3,7 @@ input[type=radio] {
 }
 
 .container-cards {
-  width: 80%;
+  width: 100%;
   max-height: 600px;
   height: 100%;
   -webkit-transform-style: preserve-3d;
@@ -54,17 +54,41 @@ input[type=radio] {
   border-radius: 10px 10px 0 0;
 }
 
-#item-1:checked ~ .cards #card-3,
-#item-2:checked ~ .cards #card-1,
-#item-3:checked ~ .cards #card-2 {
+#item-1:checked ~ .cards #card-2,
+#item-2:checked ~ .cards #card-3,
+#item-3:checked ~ .cards #card-4,
+#item-4:checked ~ .cards #card-5,
+#item-5:checked ~ .cards #card-1 {
   -webkit-transform: translatex(-40%) scale(0.8);
           transform: translatex(-40%) scale(0.8);
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #card-2,
-#item-2:checked ~ .cards #card-3,
-#item-3:checked ~ .cards #card-1 {
+#item-1:checked ~ .cards #card-3,
+#item-2:checked ~ .cards #card-4,
+#item-3:checked ~ .cards #card-5,
+#item-4:checked ~ .cards #card-1,
+#item-5:checked ~ .cards #card-2 {
+  -webkit-transform: translatex(-60%) scale(0.6);
+          transform: translatex(-60%) scale(0.6);
+  z-index: -1;
+}
+
+#item-1:checked ~ .cards #card-4,
+#item-2:checked ~ .cards #card-5,
+#item-3:checked ~ .cards #card-1,
+#item-4:checked ~ .cards #card-2,
+#item-5:checked ~ .cards #card-3 {
+  -webkit-transform: translatex(60%) scale(0.6);
+          transform: translatex(60%) scale(0.6);
+  z-index: -1;
+}
+
+#item-1:checked ~ .cards #card-5,
+#item-2:checked ~ .cards #card-1,
+#item-3:checked ~ .cards #card-2,
+#item-4:checked ~ .cards #card-3,
+#item-5:checked ~ .cards #card-4 {
   -webkit-transform: translatex(40%) scale(0.8);
           transform: translatex(40%) scale(0.8);
   z-index: 0;
@@ -72,7 +96,9 @@ input[type=radio] {
 
 #item-1:checked ~ .cards #card-1,
 #item-2:checked ~ .cards #card-2,
-#item-3:checked ~ .cards #card-3 {
+#item-3:checked ~ .cards #card-3,
+#item-4:checked ~ .cards #card-4,
+#item-5:checked ~ .cards #card-5 {
   -webkit-transform: translatex(0) scale(1);
           transform: translatex(0) scale(1);
   opacity: 1;
@@ -81,7 +107,9 @@ input[type=radio] {
 
 #item-1:checked ~ .cards #card-1 .img-cards,
 #item-2:checked ~ .cards #card-2 .img-cards,
-#item-3:checked ~ .cards #card-3 .img-cards {
+#item-3:checked ~ .cards #card-3 .img-cards,
+#item-4:checked ~ .cards #card-4 .img-cards,
+#item-5:checked ~ .cards #card-5 .img-cards {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
           box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }

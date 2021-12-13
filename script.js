@@ -5,16 +5,19 @@ const articles = document.querySelectorAll('.article');
 const section = document.querySelector('.section');
 const header = document.querySelector('.primary-header')
 
+/*
 window.addEventListener('load', () => {
      const TL = gsap.timeline({paused : true});
 
      TL
      .staggerFrom(header, 1, {opacity: 0, ease: "power2.out"}, 1, "+=1.6")
      .staggerFrom(navItems, 1, {top: -100, opacity: 0, ease: "power2.out"}, .3)
-     .staggerFrom(section, 6, {opacity: 0, ease: "power2.out"}, 1, '-=.1')
-     .staggerFrom(socials, 1, {left: -200, ease: "power2.out"}, .3, '-=3')
+     .staggerFrom(socials, 1, {left: -200, ease: "power2.out"}, .2, '-=3')
+     .staggerFrom(section, 6, {opacity: 0, ease: "power2.out"}, 1, '-=1')
+     
      TL.play();
    })
+   */
 
 
 
