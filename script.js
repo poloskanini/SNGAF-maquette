@@ -5,7 +5,6 @@ const articles = document.querySelectorAll('.article');
 const section = document.querySelector('.section');
 const header = document.querySelector('.primary-header')
 
-/*
 window.addEventListener('load', () => {
      const TL = gsap.timeline({paused : true});
 
@@ -17,7 +16,7 @@ window.addEventListener('load', () => {
      TL.play();
    })
 
-   */
+
 
 // Profile menu
 const profile = document.querySelector('.profile-button');
