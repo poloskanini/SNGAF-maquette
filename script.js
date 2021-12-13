@@ -5,16 +5,19 @@ const articles = document.querySelectorAll('.article');
 const section = document.querySelector('.section');
 const header = document.querySelector('.primary-header')
 
+/*
 window.addEventListener('load', () => {
-    const TL = gsap.timeline({paused : true})
-    TL
-    .staggerFrom(header, 1, {opacity: 0, ease: "power2.out"}, 1, "+=1.6")
-    
-    .staggerFrom(navItems, 1, {top: -100, opacity: 0, ease: "power2.out"}, .3)
-    .staggerFrom(socials, .6, {left: -200, ease: "power2.out"}, .3, '-=4')
-    .staggerFrom(section, 6, {opacity: 0, ease: "power2.out"}, 1, '-=.1');
-    TL.play();
-  })
+     const TL = gsap.timeline({paused : true});
+
+     TL
+     .staggerFrom(header, 1, {opacity: 0, ease: "power2.out"}, 1, "+=1.6")
+     .staggerFrom(navItems, 1, {top: -100, opacity: 0, ease: "power2.out"}, .3)
+     .staggerFrom(section, 6, {opacity: 0, ease: "power2.out"}, 1, '-=.1')
+     .staggerFrom(socials, 1, {left: -200, ease: "power2.out"}, .3, '-=3')
+     TL.play();
+   })
+
+   */
 
 // Profile menu
 const profile = document.querySelector('.profile-button');
@@ -72,4 +75,5 @@ const vid = document.getElementById("heroVideo");
 function videoDisappear() {
    vid.classList.add("videoTransparency")
  };
+
 

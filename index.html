@@ -20,12 +20,12 @@
 
 <body class="w-full">
 
-   <div class="heroWrap w-full">
+   <div class="heroWrap w-full relative flex align-center">
 
     <!-- Video -->
-    <div class="hero-anim" id="hero-anim">
-      <!-- <video id="heroVideo" poster="" autoplay playsinline muted src="content/Vidéo intro APPLI SNGAF SANS SON.mov" onended="videoDisappear()"></video> -->
-    </div>
+    <!-- <div class="hero-anim" id="hero-anim">
+      <video id="heroVideo" poster="" autoplay playsinline muted src="content/Vidéo intro APPLI SNGAF SANS SON.mov" onended="videoDisappear()"></video>
+    </div> -->
    
     <header class="primary-header items-center px-4 fixed top-0 w-full">
       <div id="logo" class="flex justify-center ml-2">
@@ -88,10 +88,39 @@
       </nav>
     </header>
 
-    <!-- SECTION ARTICLES (WITH ARTICLES.JS)-->
-    <section class="section absolute top-48 w-full">
+    <!-- SOCIALS -->
+    <ul id="socials" class="px-4">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+        <img src="content/fb.svg" class="logo-socials w-4 h-4">
+      </li>
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+        <img src="content/insta.svg" class="logo-socials w-4 h-4">
+      </li>
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+        <img src="content/yt.svg" class="logo-socials w-4 h-4">
+      </li>
+    </ul>
 
-      <div class="articles-wrap relative w-42 flex justify-center">
+     <!-- SEARCH DATA -->
+     <div class="search-data-wrapper">
+      <div class="search-data">
+        <input class="search-data-input" type="text" required>
+        <div class="line"></div>
+        <label>Que recherchez vous ?</label>
+      </div>
+    </div>
+
+    <!-- SEARCH DATA CLOSE BUTTON -->
+    <div class="search-data-close-button p-4">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <!-- SECTION ARTICLES -->
+    <section class="section absolute w-full flex justify-center items-center h-full">
+
+      <!-- (WITH ARTICLES.JS) -->
+
+      <!-- <div class="articles-wrap relative w-42 flex justify-center">
 
         <div class="container">
           <div class="card-carousel">
@@ -174,43 +203,56 @@
           <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
         </div>
 
+      </div> -->
 
-      </div>
-
+      <!-- (WITH SWIPERARTICLES.JS) -->
+      
+      
+        <div class="container-cards flex justify-center">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="card-1">
+              <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/12/JE-SUIS-TON-PER-MINIATURE-1-scaled.jpg" alt="">
+              <div class="text-card-container px-6 py-3 w-full h-auto">
+                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
+                  Dates Clés
+                </h2>
+                <p class="text-gray-700 text-sm">
+                  Tu as reçu tout un tas de mails de Natixis, d’Arial CNP et d’Air France et tu es un peu perdu ? Tu t’interroges : « mais bon sang, c’est quoi ces PER, PERO, PERCO et compagnie ? » </p>
+              </div>
+            </label>
+            <label class="card" for="item-2" id="card-2">
+              <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/12/KILT-DECEMBRE-21-scaled.jpg" alt="">
+              <div class="text-card-container px-6 py-3 w-full h-auto">
+                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
+                  Kiss Landing Tribune - Décembre 2021
+                </h2>
+                <p class="text-gray-700 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </label>
+            <label class="card" for="item-3" id="card-3">
+              <img class="img-cards" src="https://www.sngaf.com/wp-content/uploads/2021/11/DATES-CLES-APPLI-scaled.jpg" alt="">
+              <div class="text-card-container px-6 py-3 w-full h-auto">
+                <h2 class="card-title font-bold text-gray-700 text-sm pb-3">
+                  Dates Clés
+                </h2>
+                <p class="text-gray-700 text-sm">
+                  Notre beau métier nous oblige à vivre à l’horizon du prochain DDA ou sur un fuseau horaire qui n’existe que dans nos insomnies.</p>
+              </div>
+            </label>
+            
+          </div>
+        </div>
     </section>
+        
 
-    <!-- SOCIALS -->
-    <ul id="socials" class="px-4">
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
-        <img src="content/fb.svg" class="logo-socials w-4 h-4">
-      </li>
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
-        <img src="content/insta.svg" class="logo-socials w-4 h-4">
-      </li>
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
-        <img src="content/yt.svg" class="logo-socials w-4 h-4">
-      </li>
-    </ul>
 
-    <!-- SEARCH DATA CLOSE BUTTON -->
-    <div class="search-data-close-button p-4">
-      <i class="fas fa-times"></i>
-    </div>
-
-    <!-- SEARCH DATA -->
-    <div class="search-data-wrapper">
-      <div class="search-data">
-        <input class="search-data-input" type="text" required>
-        <div class="line"></div>
-        <label>Que recherchez vous ?</label>
-      </div>
-    </div>
+   
   
-    </div>
   </div>
     
-
-   </div>
 
 
   <!-- TypeWriter -->
@@ -220,6 +262,7 @@
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- My JS -->
+  <!-- <script src="swiperarticles.js"></script> -->
   <script src="hammer.min.js"></script>
   <script src="articles.js"></script>
   <script src="script.js"></script>

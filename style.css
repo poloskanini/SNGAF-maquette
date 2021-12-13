@@ -21,6 +21,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  height: 100vh;
 }
 
 /* Video intro */
@@ -191,8 +192,8 @@ a.nav-link:hover:before {
   z-index: 9999;
 }
 
-/* SECTION ARTICLES (with HAMMER */
-
+/* SECTION ARTICLES (with HAMMER) */
+/* 
 .visuallyhidden {
   position: absolute;
   z-index: -1;
@@ -251,17 +252,17 @@ a.nav-link:hover:before {
   overflow: hidden;
   filter: brightness(1);
   transition: .3s filter ease-in-out;
-}
+} */
 
-.card:hover {
+/* .card:hover {
   filter: brightness(50%);
 }
 
 .card.highlight:hover {
   filter: brightness(100%);
-}
+} */
 
-/* NEW SECTION ARTICLES */
+/* NEW VERSION ARTICLES */
 
 
 
@@ -327,7 +328,6 @@ a.nav-link:hover:before {
 
   #socials {
     top: .5rem;
-    position: absolute;
   }
 
   .card-carousel .card {
