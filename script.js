@@ -6,6 +6,7 @@ const section = document.querySelector('.section');
 const header = document.querySelector('.primary-header')
 
 
+/*
 window.addEventListener('load', () => {
      const TL = gsap.timeline({paused : true});
 
@@ -17,6 +18,8 @@ window.addEventListener('load', () => {
      
      TL.play();
    })
+
+   */
 
 
 

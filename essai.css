@@ -1,0 +1,40 @@
+/*** Basic reset ***/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 1.4rem;
+}
+
+body {
+  font-family: 'Gill sans MT Condensed', sans-serif;
+  background: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border: 2px solid white;
+}
+
+.logo-socials-hover {
+  opacity: 0;
+  transition: .2s opacity ease-in-out;
+}
+
+.logo-socials-hover:hover {
+  opacity: 1;
+}
