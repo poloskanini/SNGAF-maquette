@@ -17,7 +17,7 @@ body {
 }
 
 .heroWrap {
-  background: url(content/94414604_m.jpg);
+  background: url(content/94414604_m_darker.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -187,9 +187,11 @@ a.nav-link:hover:before {
 }
 
 #socials {
-  top: 45%;
+  bottom: 0;
   position: absolute;
   z-index: 9999;
+  vertical-align: middle;
+  margin: 1rem 0;
 }
 
 .logo-socials-hover {
@@ -201,78 +203,11 @@ a.nav-link:hover:before {
   opacity: 1;
 }
 
-
-/* SECTION ARTICLES (with HAMMER) */
-/* 
-.visuallyhidden {
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  opacity: 0;
-}
-
-.container {
-  overflow: hidden;
-  padding: 20px;
-}
-
-.card-carousel {
-  --card-width: 80%;
-  --card-max-width: 380px;
-  --card-height: 400px;
-  --carousel-min-width: 600px;
-  z-index: 1;
-  position: relative;
-  margin: 0 auto;
+.pub {
+  background: white;
   width: 100%;
-  height: var(--card-height);
-  min-width: var(--carousel-min-width);
-  transition: filter .3s ease;
+  height: 100vh;
 }
-
-@media screen and (max-width: 640px) {
-  .card-carousel {
-    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2);
-    --card-max-width: 300px;
-  }
-}
-
-.card-carousel.smooth-return {
-  transition: all .2s ease;
-}
-
-.card-carousel .card {
-  background: rgba(255, 255, 255, 1);
-  width: var(--card-width);
-  max-width: var(--card-max-width);
-  text-align: center;
-  min-width: 380px;
-  height: var(--card-height);
-  position: absolute;
-  margin: 0 auto;
-  transition: inherit;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  border-radius: 1em;
-  filter: brightness(.9);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  filter: brightness(1);
-  transition: .3s filter ease-in-out;
-} */
-
-/* .card:hover {
-  filter: brightness(50%);
-}
-
-.card.highlight:hover {
-  filter: brightness(100%);
-} */
-
-/* NEW VERSION ARTICLES */
 
 
 
@@ -285,7 +220,7 @@ a.nav-link:hover:before {
     position: fixed;
     line-height: 20px;
     inset: 0 0% 0% 0%;
-    background: hsl(0, 0%, 0%, 0.7);
+    background: hsl(0, 0%, 0%, 0.2);
     backdrop-filter: blur(1rem);
     flex-direction: column;
     align-items: center;
@@ -296,12 +231,12 @@ a.nav-link:hover:before {
     transition: transform 350ms ease-out;
   }
 
-  /* @supports (backdrop-filter: blur(1rem)) {
+  @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation {
-      background: hsl(0, 0%, 0%, 0.1);
+      background: hsl(0, 0%, 0%, 0.7);
       backdrop-filter: blur(1rem);
     }
-  } */
+  }
 
   .primary-navigation[data-visible="true"] {
     transform: translateY(0%);
@@ -337,7 +272,7 @@ a.nav-link:hover:before {
   }
 
   #socials {
-    top: .5rem;
+    position: fixed;
   }
 
   .card-carousel .card {

@@ -11,14 +11,13 @@ window.addEventListener('load', () => {
      TL
      .staggerFrom(header, 1, {opacity: 0, ease: "power2.out"}, 1, "+=1.6")
      .staggerFrom(navItems, 1, {top: -100, opacity: 0, ease: "power2.out"}, .3)
-     .staggerFrom(socials, 1, {left: -200, ease: "power2.out"}, .2, '-=4')
+     .staggerFrom(socials, 1, {bottom: -200, ease: "power2.out"}, .2, '-=4')
      .staggerFrom(section, 6, {opacity: 0, ease: "power2.out"}, 1, '-=.2')
+    
+     
      
      TL.play();
    })
-
-
-
 
 
 // Profile menu
@@ -71,5 +70,4 @@ const vid = document.getElementById("heroVideo");
 function videoDisappear() {
    vid.classList.add("videoTransparency")
  };
-
 
