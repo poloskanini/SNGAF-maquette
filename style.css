@@ -188,7 +188,7 @@ a.nav-link:hover:before {
 
 #socials {
   bottom: 0;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   vertical-align: middle;
   margin: 1rem 0;
@@ -220,11 +220,10 @@ a.nav-link:hover:before {
     position: fixed;
     line-height: 20px;
     inset: 0 0% 0% 0%;
-    background: hsl(0, 0%, 0%, 0.2);
-    backdrop-filter: blur(1rem);
+    background: hsl(0, 0%, 0%, .9);
     flex-direction: column;
     align-items: center;
-    padding: min(20vh, 10rem) 2rem;
+    padding: 2rem;
     transition: .3s background-color ease-in-out;
     z-index: 1000;
     transform: translateY(-150%);
@@ -257,8 +256,8 @@ a.nav-link:hover:before {
   .mobile-nav-toggle {
     position: absolute;
     background: url(content/open.svg);
-    width: 2rem;
-    height: 2rem;
+    width: 1.4rem;
+    height: 1.4rem;
     border: 0;
     top: 2rem;
     right: 0;
@@ -273,6 +272,8 @@ a.nav-link:hover:before {
 
   #socials {
     position: fixed;
+    top: 0;
+    margin: 0;
   }
 
   .card-carousel .card {
