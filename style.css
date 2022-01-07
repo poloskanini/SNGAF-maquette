@@ -148,6 +148,16 @@ a.nav-link:hover:before {
   font-size: 2rem;
 }
 
+.plane-icon:hover {
+  color: salmon;
+  transition: all .2s linear;
+}
+
+.plane-icon {
+  color: #FFF;
+  font-size: 1.3rem;
+}
+
 .search-data input:valid ~ label {
   display: none;
 }
@@ -187,7 +197,7 @@ a.nav-link:hover:before {
 }
 
 #socials {
-  bottom: 0;
+  top: 0;
   position: fixed;
   z-index: 9999;
   vertical-align: middle;
@@ -226,7 +236,7 @@ a.nav-link:hover:before {
     padding: 2rem;
     transition: .3s background-color ease-in-out;
     z-index: 1000;
-    transform: translateY(-150%);
+    transform: translateX(-150%);
     transition: transform 350ms ease-out;
   }
 
@@ -238,7 +248,7 @@ a.nav-link:hover:before {
   }
 
   .primary-navigation[data-visible="true"] {
-    transform: translateY(0%);
+    transform: translateX(0%);
   }
 
   .search-icon {

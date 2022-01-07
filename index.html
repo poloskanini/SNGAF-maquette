@@ -35,12 +35,13 @@
         <span class="sr-only">MENU</span>
       </button>
 
+
       <!-- NAVBAR -->
       <nav id="navlist"class="text-white uppercase">
         <ul class="primary-navigation flex items-center justify-center text-base letter-spacing-2" data-visible="false">
 
           <li class="nav-item nav-link-home px-3 bg-white block rounded-md text-base font-medium">
-            <a href="#">Accueil</a>
+            <a href="index.html">Accueil</a>
           </li>
 
           <li class="nav-item px-3 text-center">
@@ -52,7 +53,7 @@
           </li>
 
           <li class="nav-item px-3 items-center text-center">
-            <a class="nav-link relative" href="https://poloskanini.github.io/photomaton_SNGAF/">Qui sommes nous ?</a>
+            <a class="nav-link relative" href="quisommesnous.html">Qui sommes nous ?</a>
           </li>
 
           <li class="nav-item px-3 items-center text-center">
@@ -65,8 +66,8 @@
 
           <li class="nav-item profile-button px-3">
             <button id="profile" class="profile-pic bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" type="button" aria-expanded="false" aria-haspopup="true">
-              <div class="profile-pic rounded-full w-7 h-7 flex p-px">
-                <img class="object-contain rounded-full" src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.6435-9/70956512_10156562274286966_773898302956503040_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iPbH571yqPcAX8xUDDx&_nc_ht=scontent-cdt1-1.xx&oh=7cfee0fe522b0a2d3038ef166c5f71ea&oe=61D30285" alt="">
+              <div class="profile-pic rounded-full w-8 h-8 flex p-px">
+                <img class="object-contain rounded-full w-full" src="content/profilepic.jpeg" alt="">
               </div>
             </button>
             <div id="profile-menu" class="absolute hidden w-48 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none transition duration-300 ease-in-out" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
@@ -91,19 +92,19 @@
 
     <!-- SOCIALS -->
     <ul id="socials" class="px-4">
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 sm:my-1 relative">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center my-1 sm:my-1 relative">
         <a class="flex justify-center items-center" href="https://www.facebook.com/groups/infossngaf" target="blank">
-          <img src="content/fb.svg" class="logo-socials w-5 h-5 cursor-pointer">
+          <img src="content/fb.svg" class="logo-socials w-5 h-5 cursor-pointer" fill="green">
           <img src="content/512px-Facebook_circle_pictogram.png" class="logo-socials-hover absolute">
         </a>
       </li>
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center my-1 relative cursor-pointer">
         <a class="flex justify-center items-center" href="https://www.instagram.com/sngaf.officiel/?hl=fr" target="blank">
           <img src="content/insta.svg" class="logo-socials w-5 h-5">
           <img src="content/INSTAGRAM-Logo-Round-1000px-768x768.png" class="logo-socials-hover absolute w-full">
         </a>
       </li>
-      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center bg-white my-1 relative cursor-pointer">
+      <li class="bulle w-6 h-6 rounded-full flex justify-center items-center my-1 relative cursor-pointer">
         <a class="flex justify-center items-center" href="https://www.youtube.com/c/SNGAFTV" target="blank">
           <img src="content/yt.svg" class="logo-socials w-5 h-5">
           <img src="content/pngegg (17).png" class="logo-socials-hover absolute w-full">
@@ -118,6 +119,11 @@
         <input class="search-data-input" type="text" required>
         <div class="line"></div>
         <label>Que recherchez-vous ?</label>
+        <span>
+          <button class="search-submit absolute" type="submit">
+            <i class="plane-icon fas fa-plane"></i>
+          </button>
+        </span>
       </div>
     </div>
 
