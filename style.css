@@ -197,11 +197,12 @@ a.nav-link:hover:before {
 }
 
 #socials {
-  top: 0;
+  bottom: 0;
   position: fixed;
   z-index: 9999;
   vertical-align: middle;
   margin: 1rem 0;
+  padding-top: .5rem;
 }
 
 .logo-socials-hover {
