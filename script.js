@@ -71,3 +71,10 @@ function videoDisappear() {
    vid.classList.add("videoTransparency")
  };
 
+// Loader
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+  loader.classList.add('fade-out');
+  loader.style.display="none";
+})

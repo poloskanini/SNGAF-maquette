@@ -16,6 +16,49 @@ body {
   font-family: 'Gill sans MT Condensed', sans-serif;
 }
 
+/* Loader */
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  margin-right: 1rem;
+  animation: bounce .3s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.d2 {
+  animation-delay: 0.05s;
+}
+
+.d3 {
+  animation-delay: 0.1s;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: all .2s ease-out;
+}
+
+
+/* HeroWrap */
 .heroWrap {
   background: url(content/94414604_m_darker.jpg);
   background-repeat: no-repeat;
